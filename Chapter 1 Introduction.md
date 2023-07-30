@@ -103,7 +103,7 @@ $$
 
 ![image-20230714195641923](./Image/10.png)
 
-我们将在$1.4$节中自习研究同胚的定义,在此,为了能够具体地了解同胚,我们现在给出了四个例子($\text{Figure 1.9}$)
+我们将在$1.4$节中仔细研究同胚的定义,在此,为了能够具体地了解同胚,我们现在给出了四个例子($\text{Figure 1.9}$)
 
 $(a)$ 圆柱体的表面,不包括其上两个圆
 
@@ -228,7 +228,7 @@ $$
 
 
 
-令$f$为两个欧式空间之间的函数,记为$f:  \mathbb{E}^m \to \mathbb{E}^n$.关于$f$的连续性的经典定义如下:若对于任意的$\varepsilon>0$,存在$\delta>0$当$\|\boldsymbol{y} - \boldsymbol{x}\|<\delta$时有$\|f(\boldsymbol{y}) - f(\boldsymbol{x})\|<\varepsilon$则称$f$在$\boldsymbol{x} \in \mathbb{E}^m$上连续.若其对于所有的$\boldsymbol{x} \in \mathbb{E}^m$都满足上述条件则称$f$为一个连续函数.如果对于某个实数$r > 0$的以$\boldsymbol{p} \in \mathbb{E}^m$为中心,$r$为半径所组成的实球完全处于$N$内($N\subset \mathbb{E}^m$,注意,$N$不是实球,它只是一个子集)则称$N$为点$\boldsymbol{p}$的邻域.可以容易的将连续性的定义改写为:若对于任意的$\boldsymbol{x}\in \mathbb{E}^m$以及任意$f(\boldsymbol{x})$在$\mathbb{E}^n$中的邻域$N$都有$f^{-1}(N)$是$\boldsymbol{x}$在$\mathbb{E}^m$上的邻域.
+令$f$为两个欧式空间之间的函数,记为$f:  \mathbb{E}^m \to \mathbb{E}^n$.关于$f$的连续性的经典定义如下:若对于任意的$\varepsilon>0$,存在$\delta>0$当$\|\boldsymbol{y} - \boldsymbol{x}\|<\delta$时有$\|f(\boldsymbol{y}) - f(\boldsymbol{x})\|<\varepsilon$则称$f$在$\boldsymbol{x} \in \mathbb{E}^m$上连续.若其对于所有的$\boldsymbol{x} \in \mathbb{E}^m$都满足上述条件则称$f$为一个连续函数.如果对于某个实数$r > 0$的以$\boldsymbol{p} \in \mathbb{E}^m$为中心,$r$为半径所组成的实球$B(\boldsymbol{p},r)$完全处于$N$内($N\subset \mathbb{E}^m$,注意,$N$不是实球,它只是一个子集)则称$N$为点$\boldsymbol{p}$的邻域.可以容易的将连续性的定义改写为:若对于任意的$\boldsymbol{x}\in \mathbb{E}^m$以及任意$f(\boldsymbol{x})$在$\mathbb{E}^n$中的邻域$N$都有$f^{-1}(N)$是$\boldsymbol{x}$在$\mathbb{E}^m$上的邻域.
 
 空间中的每个点都有一组"邻域",这些邻域反过来又能很好地定义连续函数,所以这一概念是至关重要的.注意到在定义欧式空间中的邻域时,我们使用了点与点之间的欧式距离,于是在构建抽象空间时,我们希望保留邻域这个概念但摆脱对于距离函数的依赖(拓扑等价是不保持距离的,可以通过$\text{Figure 1.8}$四面体上两点之间的距离与其投影到球面上后两点之间的距离看出).
 

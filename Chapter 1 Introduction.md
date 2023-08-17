@@ -230,6 +230,21 @@ $$
 
 令$f$为两个欧式空间之间的函数,记为$f:  \mathbb{E}^m \to \mathbb{E}^n$.关于$f$的连续性的经典定义如下:若对于任意的$\varepsilon>0$,存在$\delta>0$当$\|\boldsymbol{y} - \boldsymbol{x}\|<\delta$时有$\|f(\boldsymbol{y}) - f(\boldsymbol{x})\|<\varepsilon$则称$f$在$\boldsymbol{x} \in \mathbb{E}^m$上连续.若其对于所有的$\boldsymbol{x} \in \mathbb{E}^m$都满足上述条件则称$f$为一个连续函数.如果对于某个实数$r > 0$的以$\boldsymbol{p} \in \mathbb{E}^m$为中心,$r$为半径所组成的实球$B(\boldsymbol{p},r)$完全处于$N$内($N\subset \mathbb{E}^m$,注意,$N$不是实球,它只是一个子集)则称$N$为点$\boldsymbol{p}$的邻域.可以容易的将连续性的定义改写为:若对于任意的$\boldsymbol{x}\in \mathbb{E}^m$以及任意$f(\boldsymbol{x})$在$\mathbb{E}^n$中的邻域$N$都有$f^{-1}(N)$是$\boldsymbol{x}$在$\mathbb{E}^m$上的邻域.
 
+> 为什么连续的定义具有合理性,即根据我们所定义的条件为什么可以推导出$f$连续(这也是连续性定义的推理过程).
+>
+> 若$f(\boldsymbol{x})$在$\mathbb{E}^n$的邻域$N$有$f^{-1}(N)$是$\boldsymbol{x}\in \mathbb{E}^m$的邻域.
+>
+> 取$f(\boldsymbol{x})$的一个开球$B(f(\boldsymbol{x}),\varepsilon)$(即满足连续性定义的$\varepsilon$)将其视为$f(\boldsymbol{x})$的一个邻域$N$,那么其逆$f^{-1}(N)$是$\boldsymbol{x}$的一个邻域,那么就不难发现存在一个开球$B(\boldsymbol{x},\delta)$使得$B(\boldsymbol{x},\delta)\subset f^{-1}(N)$,即处于这个$\delta$为半径的开球内的任意点$\boldsymbol{x}'$的像与$f(\boldsymbol{x})$的距离均小于$\varepsilon$
+>
+> 
+>
+> 至于连续的定义为什么不是对于任意的$\boldsymbol{x}\in \mathbb{E}^m$及其邻域$N$都有$f(N)$是$f(\boldsymbol{x})$在$\mathbb{E}^n$上的邻域呢?
+>
+> 这就需要进行讨论,证明我们刚刚提到的条件无法推导出$f$连续.
+>
+> 考虑$f : [0,1) \to C$,$f = e^{2\pi i x}$的逆$f^{-1} : C\to [0,1),f^{-1} = \frac{\ln x}{2\pi i}$也可以写为$f^{-1}:x = \cos \theta + i \sin \theta \to \frac{\theta}{2\pi}$.其中$\theta \in [0,2\pi)$,不难发现对于任意$x\in C$的邻域$N$都有$f^{-1}(N)$是$[0,1)$中关于$\frac{\theta}{2\pi}$的邻域.但是$f^{-1}$并不连续,这是因为对于$0$的邻域$[0,\frac{1}{2})$有$f([0,\frac{1}{2})) = 1$是$C$的上半圆周,但是并不是一个关于$f(0) = 1$的邻域.
+>
+
 空间中的每个点都有一组"邻域",这些邻域反过来又能很好地定义连续函数,所以这一概念是至关重要的.注意到在定义欧式空间中的邻域时,我们使用了点与点之间的欧式距离,于是在构建抽象空间时,我们希望保留邻域这个概念但摆脱对于距离函数的依赖(拓扑等价是不保持距离的,可以通过$\text{Figure 1.8}$四面体上两点之间的距离与其投影到球面上后两点之间的距离看出).
 
 通过对于欧式空间中点的邻域的性质的考察,我们可以得到拓扑空间的下列公理.
